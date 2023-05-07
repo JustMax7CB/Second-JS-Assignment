@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Assignment 2</title>
+    <style>
+        .content , h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content > * {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        button {
+            margin: 0 10px 0 10px;
+            width: 12em;
+            height: 5em;
+        }
+        p {
+            position: relative;
+            left: 37%;
+            margin-top: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Tasks 1 - 18</a>
+        <a href="./tip_calculations/tipCalc.html">Task 19 - Calculator</a>
+        <a href="./IncDecRst/zero_3_buttons.html">Task 20</a>
+        <a href="./quotesTask/quotes.html">Task 21 - Quotes</a>
+        <a href="./libraryTask/books.html">Task 23 - Books</a>
+    </nav>
+    <h1>Javascript Assignment 2</h1>
+    <div class="content">
+        <div class="task13">
+            <button id="btn_change_display">Click Me</button>
+            <button id="btn_changing_display" style="display:none;">Appear and Disappear</button>
+        </div>
+
+        <div class="task14">
+            <button id="btn_new_page">Open New Window</button>
+        </div>
+
+        <div class="task15">
+            <button id="btn_time">Press to see the time</button>
+        </div>
+    </div>
+    <p id="time"></p>
+    <script src="index.js"></script>
+</body>
+
+</html>

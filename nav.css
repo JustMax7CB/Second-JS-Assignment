@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1f2937;
+    width: 100%;
+    height: 3em;
+    overflow: hidden;
+}
+
+nav>a {
+    margin: 0 20px;
+    line-height: 32px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
+    font-size: 16px;
+    padding: 0 2em;
+    font-weight: 600;
+    background: #1f2937;
+    color: white;
+    position: relative;
+    border-radius: 0.3em;
+    z-index: 1;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: black;
+}
+
+nav a:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -3%;
+    right: -3%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.8s;
+}
+
+nav a:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}

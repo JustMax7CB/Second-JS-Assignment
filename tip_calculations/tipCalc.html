@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <link rel="stylesheet" href="../nav.css">
+</head>
+
+<body>
+    <nav>
+        <a href="../index.html">Tasks 1 - 18</a>
+        <a href="tipCalc.html">Task 19 - Calculator</a>
+        <a href="../IncDecRst/zero_3_buttons.html">Task 20</a>
+        <a href="../quotesTask/quotes.html">Task 21 - Quotes</a>
+        <a href="../libraryTask/books.html">Task 23 - Books</a>
+    </nav>
+    <h1>Tip Calculator</h1>
+    <div class="form">
+        <input type="number" name="total" id="total" placeholder="סכום לתשלום">
+        <input type="range" name="tip-percent" id="tip_percent" min="5" max="100"
+            oninput="this.nextElementSibling.value = this.value">
+        <label for="tip-percent">אחוז טיפ</label>
+    </div>
+    <div class="to-pay">
+        
+    </div>
+
+
+    <script src="tipCalc.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 23 - Books</title>
+    <link rel="stylesheet" href="../nav.css">
+    <style>
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .book-input {
+            margin: 2.5em 0 3em 0;
+        }
+
+        .book-input>* {
+            margin: 0 10px 0 10px;
+        }
+
+        button {
+            width: 10em;
+            height: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="../index.html">Tasks 1 - 18</a>
+        <a href="../tip_calculations/tipCalc.html">Task 19 - Calculator</a>
+        <a href="../IncDecRst/zero_3_buttons.html">Task 20</a>
+        <a href="../quotesTask/quotes.html">Task 21 - Quotes</a>
+        <a href="books.html">Task 23 - Books</a>
+    </nav>
+    <div class="content">
+        <div class="book-input" dir="rtl">
+            <label for="book_name">שם ספר</label>
+            <input type="text" name="book_name" id="book_name">
+            <button id="add_book">הוסף ספר</button>
+        </div>
+        <button id="show_books" onclick="showBooks()">Show all Books</button>
+        <div class="books-list">
+            
+        </div>
+    </div>
+
+    <script src="books.js"></script>
+</body>
+
+</html>
