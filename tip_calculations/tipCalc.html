@@ -29,12 +29,11 @@
     <h1>Tip Calculator</h1>
     <div class="form">
         <input type="number" name="total" id="total" placeholder="סכום לתשלום">
-        <input type="range" name="tip-percent" id="tip_percent" min="5" max="100"
-            oninput="this.nextElementSibling.value = this.value">
+        <input type="range" name="tip-percent" id="tip_percent" min="5" max="100" onchange="task19_tip_calculator()">
         <label for="tip-percent">אחוז טיפ</label>
     </div>
     <div class="to-pay">
-        
+
     </div>
 
 
